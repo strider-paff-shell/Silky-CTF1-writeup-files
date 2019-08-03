@@ -1,0 +1,68 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-08-02 10:30 CEST
+NSE: Loaded 148 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 10:30
+Completed NSE at 10:30, 0.00s elapsed
+Initiating NSE at 10:30
+Completed NSE at 10:30, 0.00s elapsed
+Initiating ARP Ping Scan at 10:30
+Scanning 192.168.43.5 [1 port]
+Completed ARP Ping Scan at 10:30, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:30
+Completed Parallel DNS resolution of 1 host. at 10:30, 13.00s elapsed
+Initiating SYN Stealth Scan at 10:30
+Scanning 192.168.43.5 [1000 ports]
+Discovered open port 80/tcp on 192.168.43.5
+Discovered open port 22/tcp on 192.168.43.5
+Completed SYN Stealth Scan at 10:30, 1.28s elapsed (1000 total ports)
+Initiating Service scan at 10:30
+Scanning 2 services on 192.168.43.5
+Completed Service scan at 10:30, 6.05s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 192.168.43.5
+adjust_timeouts2: packet supposedly had rtt of -175135 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -175135 microseconds.  Ignoring time.
+NSE: Script scanning 192.168.43.5.
+Initiating NSE at 10:31
+Completed NSE at 10:31, 0.23s elapsed
+Initiating NSE at 10:31
+Completed NSE at 10:31, 0.00s elapsed
+Nmap scan report for 192.168.43.5
+Host is up (0.00061s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 49:e6:fa:4c:d5:60:06:3b:c0:a8:c9:cc:00:10:7e:04 (RSA)
+|   256 29:1b:39:69:32:aa:ae:9f:72:83:29:d4:27:db:f8:af (ECDSA)
+|_  256 a0:05:9e:82:bc:9d:09:ce:8e:c5:40:b2:b2:93:c6:53 (ED25519)
+80/tcp open  http    Apache httpd 2.4.25 ((Debian))
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+| http-robots.txt: 1 disallowed entry 
+|_/notes.txt
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Apache2 Debian Default Page: It works
+MAC Address: 08:00:27:01:35:10 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 0.006 days (since Fri Aug  2 10:22:34 2019)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.61 ms 192.168.43.5
+
+NSE: Script Post-scanning.
+Initiating NSE at 10:31
+Completed NSE at 10:31, 0.00s elapsed
+Initiating NSE at 10:31
+Completed NSE at 10:31, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.78 seconds
+           Raw packets sent: 1037 (48.028KB) | Rcvd: 1029 (43.568KB)

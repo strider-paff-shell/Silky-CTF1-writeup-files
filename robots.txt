@@ -1,0 +1,7 @@
+User-agent: UniversalRobot/1.0
+User-agent: mein-Robot
+
+User-agent: *
+Disallow: /notes.txt
+
+
